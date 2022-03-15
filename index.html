@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Image comparison on scroll</title>
+  <meta name="description" content="Image comparison on scroll">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="Image comparison on scroll">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="Image comparison on scroll">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <link rel="stylesheet" href="styles.css?v=1.0">
+
+</head>
+
+<body>
+  <!--Sticky Scroll Position-->
+    <div class="main">
+      <div id="sticky">
+        <p>Current Y position is:
+          <b><span id="position">0</span></b>
+        </p>
+      </div> 
+    </div>
+  <!--Image Comparison-->
+    <div id= "comparion-container" class="img-comp-container">
+      <div class="img-comp-img">
+        <img src="static/1.png" width="700" height="400">
+      </div>
+      <div id="comparison" class="img-comp-img img-comp-overlay">
+        <img src="static/2.png" width="700" height="400">
+      </div>
+    </div>
+    <div class="main"></div>
+    <!-- My Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
